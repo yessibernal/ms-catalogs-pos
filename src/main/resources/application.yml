@@ -1,0 +1,23 @@
+spring:
+  output:
+    ansi:
+      enabled: ALWAYS
+  application:
+    name: ms-catalogs-pos
+  datasource:
+    url: jdbc:sqlserver://127.0.0.1:1433;databaseName=pos_dev;trustServerCertificate=true
+    username: sa
+    password: contra4Dmin
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  mvc:
+    throw-exception-if-no-handler-found: true
+  web:
+    resources:
+      add-mappings: false
+
+server:
+  port: 8081
